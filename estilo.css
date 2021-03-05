@@ -1,0 +1,460 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  #CEB086;
+}
+
+header {
+    background-color: #736048;
+    width: 100%;
+    height: 80px;
+    color: white;
+    z-index: 10;
+    position: fixed;
+    font-size: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
+.bot {
+    margin: 1% 2% 2% 2%;
+}
+#botao {
+    text-align: left;
+    float: left;
+    font-size: 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #736048;
+    padding: 10% 15% 10% 15%;
+}
+#botao:hover {
+    background-color: brown;
+}
+
+.form-group {
+    float: left;
+    padding: 1% 2% 1% 2%;
+    text-align: center;
+}
+.logo {
+   float: left;
+   padding: 0% 1% 0% 4%;
+}
+.titulo {
+    text-align: center;
+    float: left;
+    padding-left: 2%;
+}
+h1 {
+    font-size: 30px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+#subtitulo {
+    margin: 0%;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 7%;
+    font-size: 35px;
+}
+
+.tab {
+    background-image: url(img/Inicial.jpg);
+    background-size: cover;
+    min-height: 120%;
+}
+
+.tabuleiro {
+    background-size: cover;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+}
+
+.bloco {
+    background-color: #736048;
+    border-radius: 10px;
+    margin: 1%;
+    width: 10%;
+}
+
+.casas {
+    background-color: #736048;
+    border-radius: 10px;
+    float: left;
+    height: 3rem;
+    width: 80%;
+    margin: 12px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.botom {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+a {
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#switch {
+    float: left;
+}
+#switch2 {
+    float: left;
+}
+#switch:checked ~ .casas {
+    background-image: url(img/menino.jpg);
+    background-size: cover;
+}  
+#switch2:checked ~ .casas {
+    background-image: url(img/menina.jpg);
+    background-size: cover;
+}
+
+.nome {
+    float: left;
+    height: 10%;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    margin: 0%;
+}
+.bandeira {
+    height: 100%;
+    float: left;
+}
+.card{
+    float: left;
+    width: 25%;
+    height: 50%;
+    padding: 2%;
+    padding-left: 5%;
+    color: white;
+}
+h4 {
+    margin: 0%;
+    padding-top: 30%;
+}
+#switch3:checked ~ .flip-container .flipper{
+    transform: rotateY(180deg);
+    /* se quiser uma animação na vertical,
+    troque por rotateX(180deg)
+    */
+}
+.flipper{
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    text-align: center;
+    font-size: large;
+    padding-top: 2%;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.front {
+    background-color: #8C7456;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.back {
+    transform: rotateY(180deg);
+    color: black;
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+}
+.video {
+    width: 300px;
+}
+.pergunta {
+    font-size: 16px;
+}
+.uruguai {
+    float: left;
+    margin: 5% 15% 0% 15%;
+}
+.argentina {
+    float: left;
+    margin: 5% 15% 0% 13%;
+}
+.paraguai {
+    float: left;
+    margin: 5% 15% 0% 13%;
+}
+.bolivia {
+    float: left;
+    margin: 5% 15% 0% 15%;
+}
+.peru {
+    float: left;
+    margin: 5% 15% 0% 15%;
+}
+.colombia {
+    float: left;
+    margin: 5% 15% 0% 12%;
+}
+.venezuela {
+    float: left;
+    margin: 5% 15% 0% 12%;
+}
+.guiana {
+    float: left;
+    margin: 5% 15% 0% 13%;
+}
+.suriname {
+    float: left;
+    margin: 5% 15% 0% 12%;
+}
+.guianafrancesa {
+    float: left;
+    margin: 5% 10% 0% 10%;
+}
+#casa1 {
+    background-image: url(img/Mapa\ uruguai.png);
+    background-size: cover;
+}
+#casa2 {
+    background-image: url(img/Mapa\ uruguai.png);
+    background-size: cover;
+}
+#casa3 {
+    background-image: url(img/Mapa\ uruguai.png);
+    background-size: cover;
+}
+#casa4 {
+    background-image: url(img/Mapa\ argentina.png);
+    background-size: cover;
+}
+#casa5 {
+    background-image: url(img/Mapa\ argentina.png);
+    background-size: cover;
+}
+#casa6 {
+    background-image: url(img/Mapa\ argentina.png);
+    background-size: cover;
+}
+#casa7 {
+    background-image: url(img/Mapa\ paraguai.png);
+    background-size: cover;
+}
+#casa8 {
+    background-image: url(img/Mapa\ paraguai.png);
+    background-size: cover;
+}
+#casa9 {
+    background-image: url(img/Mapa\ paraguai.png);
+    background-size: cover;
+}
+#casa10 {
+    background-image: url(img/Mapa\ bolivia.png);
+    background-size: cover;
+}
+#casa11 {
+    background-image: url(img/Mapa\ bolivia.png);
+    background-size: cover;
+}
+#casa12 {
+    background-image: url(img/Mapa\ bolivia.png);
+    background-size: cover;
+}
+#casa13 {
+    background-image: url(img/Mapa\ peru.png);
+    background-size: cover;
+}
+#casa14 {
+    background-image: url(img/Mapa\ peru.png);
+    background-size: cover;
+}
+#casa15 {
+    background-image: url(img/Mapa\ peru.png);
+    background-size: cover;
+}
+#casa16 {
+    background-image: url(img/Mapa\ colombia.png);
+    background-size: cover;
+}
+#casa17 {
+    background-image: url(img/Mapa\ colombia.png);
+    background-size: cover;
+}
+#casa18 {
+    background-image: url(img/Mapa\ colombia.png);
+    background-size: cover;
+}
+#casa19 {
+    background-image: url(img/Mapa\ venezuela.png);
+    background-size: cover;
+}
+#casa20 {
+    background-image: url(img/Mapa\ venezuela.png);
+    background-size: cover;
+}
+#casa21 {
+    background-image: url(img/Mapa\ venezuela.png);
+    background-size: cover;
+}
+#casa22 {
+    background-image: url(img/Mapa\ guiana.png);
+    background-size: cover;
+}
+#casa23 {
+    background-image: url(img/Mapa\ guiana.png);
+    background-size: cover;
+}
+#casa24 {
+    background-image: url(img/Mapa\ guiana.png);
+    background-size: cover;
+}
+#casa25 {
+    background-image: url(img/Mapa\ suriname.png);
+    background-size: cover;
+}
+#casa26 {
+    background-image: url(img/Mapa\ suriname.png);
+    background-size: cover;
+}
+#casa27 {
+    background-image: url(img/Mapa\ suriname.png);
+    background-size: cover;
+}
+#casa28 {
+    background-image: url(img/Mapa\ gui-francesa.png);
+    background-size: cover;
+}
+#casa29 {
+    background-image: url(img/Mapa\ gui-francesa.png);
+    background-size: cover;
+}
+#casa30 {
+    background-image: url(img/Mapa\ gui-francesa.png);
+    background-size: cover;
+} 
+
+#regras {
+    margin: 1% 10% 5% 10%;
+    float: left;
+    text-align: center;
+    width: 80%;
+}
+.reg1 {
+    display: flex;
+    justify-content: center;
+}
+.reg2 {
+    display: flex;
+    justify-content: center;
+}
+.reg {
+    float: left;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color:  #8C7456;
+}
+.gabarito {
+    padding: 2% 0% 2% 40%;
+}
+#gabarito {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 1% 2% 1% 2%;
+}
+#gabarito:hover {
+    background-color: brown;
+}
+
+
+footer {
+    background-color: #8C7456;
+    float: left;
+    margin-top: 5%;
+    width: 100%;
+}
+.coluna {
+    float: left;
+    position: relative;
+    width: 40%;
+    padding: 3% 5% 5% 5%;
+    font-size: 20px;
+}
+.creditos {
+    font-size: 25px;
+    margin-bottom: 0%;
+}
+h5 {
+    margin-top: 0%;
+}
+
+@media all and (max-width:1200px) {
+    .logo {
+        display: none;
+    }
+    h2 {
+        padding-top: 7rem;
+    }
+}
+@media all and (max-width: 1000px) {
+    .form-group {
+        display: none;
+    }
+    .bot {
+        display: none;
+    }
+    .video {
+        width: 200px;
+    }
+}
+@media all and (max-width:800px) {
+    .bloco {
+        width: 20%;
+    }
+    .pergunta {
+        font-size: 10px;
+    }
+    .video {
+        width: 100px;
+    }
+    .card {
+        height: 25%;
+    }
+}
+@media all and (max-width:460px) {
+    h1 {
+        font-size: 20px;
+    }
+}
